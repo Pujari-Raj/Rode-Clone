@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RØDE Microphones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,100&display=swap"
+      rel="stylesheet"/>
+    <!---favicon-->
+    <link rel="icon" href="./assets/favicon.svg" type="image/x-icon">
+
+    <!---font-awesome-cdn--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!--- Tailwind-CSS-CDN --->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+
+            screens:{
+                xs: '320px',
+                sm: '481px',
+                md: '768px',
+                lg: '1024px',
+                xl: '1200px',
+                xxl: '1400px',
+            },
+
+            extend: {
+                colors: {
+                bgbody: '#fbf7ed',
+                darkgreen: '#004C3F',
+                green: '#F3FCF4',
+                },
+                fontFamily: {
+                'mont': ['"Montserrat"', '"sans"']
+                }
+            }
+            }
+        }
+    </script>
+
+    <style>
+      /*Custom Style for banners*/
+ 
+      @media screen and (min-width:992px){
+
+        /*keeping same height for all banners*/
+        .hero-banner {
+          height: 700px;
+        }
+        
+        /*Style for pre-launch banner*/
+        .pre_launch_banner{
+          background-image: url("./assets/hero-banners/RODEX_Prelaunch_medium.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100%;
+          width: 100%;
+        }
+
+        /*Styles for different-banners*/
+        .hero-banner-1-img {
+          background-image: url("./assets/hero-banners/hero--banner-img.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100%;
+          width: 100%;
+        }
+
+        .hero-banner-2-img {
+          background-image: url("./assets/hero-banners/hero-banner-img-2.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100%;
+          width: 100%;
+        }
+
+        .hero-banner-3-img {
+          background-image: url("./assets/hero-banners/hero-banner-img-3.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100%;
+          width: 100%;
+        }
+      } 
+
+    </style>
+  </head>
+  <body class="font-mont">
+    <!---navbar-->
+    <section class="navbar">
+      <div class="nav-top xl:border-b">
+        <div class="container  px-1 py-2 flex justify-between mx-auto items-center">
+
+          <div class="nav-top-left flex gap-2 items-center">
+            <a href="#" class=" xl:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+            <a href="#">
+              <img class="" src="assets/logo-Location.svg" alt="" srcset="">
+            </a>
+            <a href="#">
+              <span class="text-sm text-gray-500">EN</span>
+              <i class="fa-solid fa-caret-down text-gray-500"></i>
+            </a>
+          </div>
+
+          <div class="nav-top-mid  xl:hidden">
+            <a href="">
+              <img class="w-[100px]" src="assets/logo-website.svg" alt="">
+            </a>
+          </div>
+
+          <div class="nav-top-right hidden xl:flex">
+            <a href="#">
+              <img class="" src="assets/logo-user.svg" alt="" srcset="">
+            </a>
+          </div>
+
+          <div class="nav-top-right-search xl:hidden">
+            <a href="">
+              <img class="w-4 lg:w-5" src="assets/logo-search.svg" alt="" srcset="">
+            </a>
+          </div>
+
+        </div>  
+      </div>
+
+      <div class="nav-main hidden xl:flex">
+        <div class="container mx-auto py-2 ">
+          <div class="navbar flex justify-between items-center">
+            <div class="nav_web_logo">
+              <a href="#">
+                <img class="w-[100px]" src="assets/logo-website.svg" alt="" srcset="">
+              </a>
+            </div>
+            <div class="nav_web_links">
+              <ul class="flex gap-6">
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">USER GUIDES</a></li>
+                <li><a href="#">SOLUTIONS</a></li>
+                <li><a href="#">APPAREL</a></li>
+                <li><a href="#">SUPOORT</a></li>
+              </ul>
+            </div>
+            <div class="nav_searchbar">
+              <a href="">
+                <img class="" src="assets/logo-search.svg" alt="" srcset="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+    
+
+    <!--Pre-Launch-Banner--->
+    <section class="hero-banner">
+      <div class="pre_launch_banner flex flex-col items-center justify-center">
+        <div class="hero-banner-mobileview lg:hidden">
+          <img class="max-h-full w-[100vw]" src="assets/hero-banners/RODEX_Prelaunch_small.jpg" alt="">
+        </div>
+
+        <div class="pre_lanuch_banner_content lg:ml-[50%] bg-black lg:bg-transparent flex flex-col items-center gap-4 pb-[10px]">
+          <img class="max-h-full w-[100vw] mx-auto" src="assets/rode-x-text.svg" alt="" srcset="">
+          <a href="#" class="font-bold text-black bg-red-600 xl:bg-black xl:text-red-800  border border-transparent rounded-full px-6 py-1 ">
+            BUY NOW
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--hero-banner-->
+    <section class="hero-banner">
+        <div class="hero-banner-1-img bg-black flex flex-col items-center justify-center">
+            <div class="hero-banner-mobileview lg:hidden">
+              <img class="max-h-full w-[100vw]" src="assets/hero-banners/hero-1-mobile.jpg" alt="" srcset="">
+            </div>
+
+            <div class="hero-banner-1-content mx-auto mb-[10px]">
+              <div class="text-white px-4 mx-auto lg:ml-[50%] text-center">
+                <img src="assets/hero-banners/hero-banner-logo.svg" alt="" srcset="">
+                <h1 class="font-medium text-2xl mt-4 mb-4">The Revolution Is here</h1>
+                <p class="text-zinc-500">The RØDECaster Pro II is the world's most powerful all-in-one audio solution for 
+                  streamers, podcasters, musicians, and creators. Take your content to the next level.</p>
+  
+                <div class="hero-banner-btns mt-4 flex gap-4 justify-center items-center">
+                  <a href="#" class="font-semibold flex items-center text-[#C2A571]">
+                    LEARN MORE<i class="fa-solid fa-angle-right ml-2"></i>
+                  </a>
+                  <a href="#" class="font-bold text-white bg-[#ad9970] hover:text-[#ad9970] hover:bg-white 
+                  border border-transparent rounded-full px-6 py-1 transition ease-in">
+                    BUY NOW
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div> 
+    </section>
+
+    <!--hero-banner-2-->
+    <section class="hero-banner">
+        <div class="hero-banner-2-img bg-white flex flex-col items-center justify-center">
+          <div class="hero-banner-mobileview lg:hidden ">
+            <img class="max-h-full w-[100vw]" src="assets/hero-banners/hero-banner-2-mobile.png" alt="" srcset="">
+          </div>  
+          
+          <div class="hero-banner-1-content mx-auto mt-[10px] mb-[10px]">
+            <div class="text-white px-4 mx-auto lg:mr-[50%] text-center ">
+              <img src="assets/hero-banners/hero-banner-logo-2.svg" alt="" srcset="">
+              <h1 class="font-medium text-xl mt-4 mb-4 text-black">Your Search For The Perfect Headphones Is Over</h1>
+              <p class="text-zinc-500">Experience sound like never before with the NTH-100s. Exceptional sonic performance, superior comfort and iconic looks that inspires creativity.</p>
+
+              <div class="hero-banner-btns mt-4 flex gap-4 justify-center items-center">
+                <a href="#" class="font-semibold flex items-center text-[#C2A571]">
+                  LEARN MORE<i class="fa-solid fa-angle-right ml-2"></i>
+                </a>
+                <a href="#" class="font-bold text-white bg-[#ad9970] hover:text-[#ad9970] hover:bg-white 
+                border border-transparent rounded-full px-6 py-1 transition ease-in">
+                  BUY NOW
+                </a>
+              </div>
+            </div>
+          </div>       
+        </div> 
+    </section>
+  
+    <!--hero-banner-3--->
+    <section class="hero-banner">
+      <div class="hero-banner-3-img bg-white flex flex-col items-center justify-center">
+        <div class="hero-banner-mobileview lg:hidden">
+          <img class="max-h-full w-[100vw]" src="assets/hero-banners/hero-3-mobile.jpg" alt="" srcset="">
+        </div>  
+        
+        <div class="hero-banner-1-content  mx-auto mt-[10px]">
+          <div class="text-white px-4 mx-auto lg:ml-[50%] text-center ">
+            <img src="assets/hero-banners/hero-banner-logo-2.svg" alt="" srcset="">
+            <h1 class="font-medium text-xl mt-4 mb-4 text-black">Studio-Quality Recording, Made Simple</h1>
+            <p class="text-zinc-500">The NT-USB is a studio-quality USB condenser microphone that offers impeccable audio, 
+              elegant looks and premium features, all in an easy-to-use form factor, the NT-USB will have you sounding like a pro in seconds.</p>
+
+            <div class="hero-banner-btns mt-4 flex gap-4 justify-center items-center">
+              <a href="#" class="font-semibold flex items-center text-[#C2A571]">
+                LEARN MORE<i class="fa-solid fa-angle-right ml-2"></i>
+              </a>
+              <a href="#" class="font-bold text-white bg-[#ad9970] hover:text-[#ad9970] hover:bg-white 
+              border border-transparent rounded-full px-6 py-1 transition ease-in">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+        </div>       
+      </div> 
+  </section>
+
+  <!--Explore section---->
+  <section class="Explore-section">
+    <div class="text-center">
+      <h2 class="text-3xl my-8">Explore The RØDE Range</h2>
+    </div>
+
+    <div class="explore-container container px-2 xl:px-12 md:px-8 py-10   mx-auto ">
+      <div class=" flex flex-col relative justify-center items-center">
+        <a href="#" class="absolute top-0 w-full h-full opacity-40 hover:bg-[#484848] ease-in-out delay-100">
+          <a href="#">
+            <img src="./assets/products/microphones.png" alt="" srcset="">            
+          </a>
+        </a>
+        
+        <a href="#" class="absolute">
+          <h2 class="lg:text-6xl text-white uppercase font-semibold">microphones</h2>
+        </a>
+      </div>
+    </div>
+
+    <div class="explore-container container px-2 xl:px-12 md:px-8 py-10 mx-auto ">
+      <div class=" flex flex-col relative justify-center items-center">
+        <a href="#" class="absolute top-0 w-full h-full opacity-40 hover:bg-[#484848] ease-in-out delay-100">
+          <a href="#">
+            <img src="./assets/products/interfaces&mixers.jpg" alt="" srcset="">            
+          </a>
+        </a>
+        
+        <a href="#" class="absolute">
+          <h2 class="lg:text-6xl text-white uppercase font-semibold">interfaces & mixers</h2>
+        </a>
+      </div>
+    </div>
+
+    <div class="explore-container container px-2 py-10 xl:px-12 md:px-8 mx-auto ">
+      <div class=" flex flex-col relative justify-center items-center">
+        <a href="#" class="absolute top-0 w-full h-full opacity-40 hover:bg-[#484848] ease-in-out delay-100">
+          <a href="#">
+            <img src="./assets/products/softwares.png" alt="" srcset="">            
+          </a>
+        </a>
+        
+        <a href="#" class="absolute">
+          <h2 class="lg:text-6xl text-white uppercase font-semibold">software</h2>
+        </a>
+      </div>
+    </div>
+
+    <div class="explore-container container px-2 py-10 xl:px-12 md:px-8 mx-auto ">
+      <div class=" flex flex-col relative justify-center items-center">
+        <a href="#" class="absolute top-0 w-full h-full opacity-40 hover:bg-[#484848] ease-in-out delay-100">
+          <a href="#">
+            <img src="./assets/products/accessories.png" alt="" srcset="">            
+          </a>
+        </a>
+        
+        <a href="#" class="absolute">
+          <h2 class="lg:text-6xl text-white uppercase font-semibold">accessories</h2>
+        </a>
+      </div>
+    </div>
+    <div class="text-center">
+      <h2 class="text-3xl font-bold my-4 text-[#ad9970]">Latest From The RØDE Blog</h2>
+    </div>
+  </section>
+
+  <!---blogs--->
+
+  <section class="user-blogs bg-[#F8F9FA] ">
+    <div class="container grid grid-cols-1 md:grid-cols-2 gap-6 
+            mx-auto pt-10 pb-8 md:px-10">
+      <!--blog-1-->
+      <div class="blog-card bg-white text-center">
+        <h2 class="text-2xl">XLR vs USB Microphones: Which is Best for You?</h2>
+        <img src="./assets/blogs/blog-xlr.jpg" alt="">
+        <p class="pt-4 pb-4">We explore the differences between XLR and USB microphones, the advantages 
+        of each and which type is best suited to your needs.</p>
+        <div class="blog-btn mt-4 mb-4">
+          <a href="#" class="font-bold text-white bg-[#ad9970] hover:text-[#ad9970] hover:bg-white 
+          hover:border-[#ad9970] border border-transparent rounded-full px-6 py-1 transition ease-in">
+            LEARN MORE
+          </a>
+        </div>
+      </div>
+
+      <!--blog-2-->
+      <div class="blog-card  bg-white text-center">
+        <h2 class="text-2xl">The Difference Between Large-Diaphragm and Small-Diaphragm Condenser Microphones</h2>
+        <img src="./assets/blogs/blog-1.jpeg" alt="">
+        <p class="pt-4 pb-4">We explore the difference between large- and small-diaphragm condenser microphones, and what each is best used for.</p>
+        <div class="blog-btn mt-4 mb-4">
+          <a href="#" class="font-bold text-white bg-[#ad9970] hover:text-[#ad9970] hover:bg-white 
+          hover:border-[#ad9970] border border-transparent rounded-full px-6 py-1 transition ease-in">
+            LEARN MORE
+          </a>
+        </div>
+      </div>
+      <!---blog-3-->
+      <div class="blog-card bg-white text-center">
+        <h2 class="text-2xl">What is a Condenser Microphone and When to Use One</h2>
+        <img src="./assets/blogs/blog-2.jpg" alt="">
+        <p class="pt-4 pb-4">Learn more about the different types of condenser mics, how they work 
+          and the best applications for using them.</p>
+        <div class="blog-btn mt-4 mb-4">
+          <a href="#" class="font-bold text-white bg-[#ad9970] hover:text-[#ad9970] hover:bg-white 
+          hover:border-[#ad9970] border border-transparent rounded-full px-6 py-1 transition ease-in">
+            LEARN MORE
+          </a>
+        </div>
+      </div>
+    <!--blog-4--->
+    
+    <div class="blog-card  bg-white text-center">
+        <h2 class="text-2xl">Firmware Version 1.0.7 for the RØDECaster Pro II is Available Now</h2>
+        <img src="./assets/blogs/blog-3.jpg" alt="">
+        <p class="pt-4 pb-4">Firmware version 1.0.7 includes key feature additions, such as custom 
+          routing for USB and Bluetooth outputs, and more.</p>
+        <div class="blog-btn mt-4 mb-4">
+          <a href="#" class="font-bold text-white bg-[#ad9970] hover:text-[#ad9970] hover:bg-white 
+          hover:border-[#ad9970] border border-transparent rounded-full px-6 py-1 transition ease-in">
+            LEARN MORE
+          </a>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <!--footer--->
+  <section class="footer">
+    <hr class="border-t-1">
+    <div class="container px-3.5 grid md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 gap-6 mx-auto mt-20">
+      <div class="footer-logo">
+        <img src="./assets/logo-footer.svg" alt="" srcset="">
+      </div>
+ 
+      <div class=" md:block md:col-span-1 lg:col-span-1 xl:col-span-2">
+        <h2 class="title-font font-medium text-lg">Products</h2>
+        <nav class="list-none mb-10">
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Microphones</a>
+            </li>
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Headphones</a>
+            </li>
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Interfaces and Mixers</a>
+            </li>
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Accessories</a>
+            </li>
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Software</a>
+            </li>
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Apparel</a>
+            </li>
+        </nav>
+      </div>
+
+      <div class=" md:block md:col-span-1 lg:col-span-1 xl:col-span-2">
+        <h2 class="title-font font-medium text-lg">Support</h2>
+        <nav class="list-none mb-10">
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Contact RØDE</a>
+            </li>
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Service Centre</a>
+            </li>
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Warranty</a>
+            </li>
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Where to Buy</a>
+            </li>
+        </nav>
+      </div>
+
+      <div class=" md:block md:col-span-1 lg:col-span-1 xl:col-span-2">
+        <h2 class="title-font font-medium text-lg">Company</h2>
+        <nav class="list-none mb-10">
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">About RØDE</a>
+            </li>
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">News and Info</a>
+            </li>
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Job Opportunities</a>
+            </li>
+        </nav>
+        <h2 class="title-font font-medium text-lg">Account</h2>
+        <nav class="list-none mb-10">
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Manage your Accoun</a>
+            </li>
+            <li class="mt-3">
+                <a href="#" class="text-gray-800 hover:text-gray-500 ">Create Accoun</a>
+            </li>
+        </nav>
+      </div>
+      
+      <div class="flex flex-col  lg:items-end  md:mb-8 md:col-span-3 lg:col-span-2 xl:col-span-4">
+        <h2 class="capitalize text-3xl">subscribe to our latest news and offers</h2>
+        <div class="blog-btn mt-4 mb-4 mx-auto">
+          <a href="#" class="font-bold text-white bg-[#ad9970] hover:text-[#ad9970] hover:bg-white 
+          hover:border-[#ad9970] border border-transparent rounded-full px-6 py-1 transition ease-in">
+            LEARN MORE
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!---footer-bottom-->
+    <div class="border-t px-4 pt-4 pb-10 mx-auto flex flex-col lg:flex-row justify-between">
+      <p class="text-gray-700 text-sm lg:order-1 order-3 font-medium">© 2022 RØDE All Rights Reserved.</p>
+      <a href="#" class="text-base text-gray-500 lg:order-2">Privacy Policy 
+        <span class="mx-3"> | </span>Terms & Conditions
+      </a>
+
+      <div class="xl:space-x-8 lg:space-x-5 md:space-x-20 space-x-5 lg:order-3 my-7 lg:my-0">
+
+        <a href="#">
+            <i class="fa-brands fa-facebook text-[#ad9970] text-2xl"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-twitter text-[#ad9970] text-2xl"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-instagram text-[#ad9970] text-2xl"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-youtube text-[#ad9970] text-2xl"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-tiktok text-[#ad9970] text-2xl"></i>
+        </a>
+      </div>
+    </div>
+
+  </section>
+  </body>
+</html>
